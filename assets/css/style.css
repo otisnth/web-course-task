@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+    box-sizing: border-box;
+}
+a:focus,a:active{outline: none;}
+a, a:visited{
+    text-decoration: none;
+    color: var(--black);
+}
+
+body {
+    font-size: 16px;
+    line-height: 1;
+    display: grid;
+    justify-content: center;
+}
+
+:root {
+
+    --header-1: normal 700 3.75rem 'Oswald';
+    --header-2: normal 500 2.25rem 'Oswald';
+    --header-3: normal 400 1.5rem 'Oswald';
+    --menu-item: normal 300 1.5rem 'Oswald';
+    --text: normal 300 1.25rem 'Oswald';
+    --text-small: normal 300 1.125rem 'Oswald';
+
+    --black: #000;
+    --white: #fff;
+    --gray: #EFEFEF;
+    --brown: #817070;
+
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 80px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-top: 29px;
+    padding-bottom: 29px;
+}
+
+.logo {
+    font: var(--header-2);
+    color: var(--black);
+    opacity: 0.2;
+    text-transform: uppercase;
+}
+
+.menu {
+    justify-self: end;
+}
+
+.menu-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 2.875rem;
+}
+
+.menu-item {
+    color: var(--black);
+    font: var(--menu-item);
+}
+
+.home {
+    background-image: url(/assets/img/home-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    gap: 18px;
+    height: 622px;
+}
+
+.home-header {
+    color: var(--white);
+    font: var(--header-1);
+    text-transform: uppercase;
+}
+
+.home-header_line {
+    height: 10px;
+    width: 80px;
+    background-color: var(--brown);
+}
+
+.story {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+    display: grid;
+    justify-items: center;
+    gap: 68px;
+}
+
+.story-header {
+    font: var(--header-2);
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.story-content {
+    display: grid;
+    gap: 40px;
+    align-items: center;
+    grid-template-columns: min-content auto;
+}
+
+.story-img {
+    width: 600px;
+}
+
+.story-text {
+    color: var(--black);
+    font: var(--text);
+}
+
+.blog-container {
+    background-color: var(--gray);
+}
+
+.blog {
+    padding-top: 3.75rem;
+    padding-bottom: 4.0625rem;
+    display: grid;
+    justify-items: center;
+    gap: 68px;
+}
+
+.blog-header {
+    font: var(--header-2);
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.blog-content {
+    display: grid;
+    gap: 70px;
+    grid-template-columns: repeat(3, auto);
+}
+
+.blog-card {
+    display: grid;
+    gap: 24px;
+    background-color: var(--white);
+    padding: 20px 20px 46px;
+}
+
+.blog-card_header {
+    font: var(--header-3);
+    color: var(--black);
+}
+
+.blog-card_img {
+    width: 325px;
+}
+
+.blog-card_text {
+    font: var(--text-small);
+    color: var(--black);
+}
+
+.contact-container {
+    background-color: var(--brown);
+}
+
+.contact {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+    display: grid;
+    justify-items: center;
+    gap: 35px;
+}
+
+.contact-form {
+    display: grid;
+    justify-items: center;
+    gap: 28px;
+}
+
+.contact-form_header {
+    color: var(--white);
+    font: var(--header-2);
+    text-transform: uppercase;
+}
+
+.contact-form_email {
+    font: var(--text);
+    color: var(--white);
+    outline: none;
+    background-color: var(--brown);
+    border: 3px solid var(--white);
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 300px;
+}
+
+.contact-form_btn {
+    background-color: var(--white);
+    color: var(--brown);
+    font: var(--text);
+    font-weight: 500;
+    padding: 13px 34px;
+    text-transform: uppercase;
+}
+
+footer {
+    display: grid;
+    padding-top: 28px;
+    padding-bottom: 14px;
+    justify-content: center;
+}
+
+.footer-copyright {
+    color: var(--black);
+    font: var(--text);
+    text-transform: uppercase;
+}
+
+
+
