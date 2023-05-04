@@ -71,7 +71,7 @@ body {
 }
 
 .home {
-    background-image: url(/assets/img/home-bg.png);
+    background-image: url(../../assets/img/home-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
